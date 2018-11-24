@@ -41,13 +41,7 @@ GITHUB=$HOME/github
 ### Path
 ################################################################################
 
-## Default macOS $PATH
-PATH="/usr/bin:/bin:/usr/sbin:/sbin"
-
-## Binaries installed with `brew`
-PATH="/usr/local/bin:$PATH"
-
-## My Emacs binaries
+## Add my Emacs binaries to $PATH
 PATH="$GITHUB/emacs/bin:$PATH"
 
 ## Export updated $PATH
