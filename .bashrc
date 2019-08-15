@@ -15,6 +15,9 @@ set -o emacs
 ## Don't exit on Ctrl-D
 set -o ignoreeof
 
+## Activate i-search by pressing C-s
+stty -ixon
+
 
 ################################################################################
 ### Environment
