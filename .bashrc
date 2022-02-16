@@ -55,7 +55,7 @@ export PATH
 ### Aliases
 ################################################################################
 
-alias ag="ag --path-to-ignore=$GITHUB/dotfiles/.ignore_global"
+# alias ag="ag --path-to-ignore=$GITHUB/dotfiles/.ignore_global"
 
 
 ################################################################################
