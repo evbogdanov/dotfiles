@@ -75,7 +75,15 @@ bind '"\C-n": history-search-forward'
 ### Prompt
 ################################################################################
 
-export PS1='\w $ '
+add_git_branch_to_prompt() {
+    branch=$(git branch 2>/dev/null | sed -n '/\* /s///p')
+    if [ -n "$branch" ]; then
+        # Paint it Magenta
+        echo "("$'\033[35m'"$branch"$'\033[00m'") "
+    fi
+}
+
+export PS1="\w \$(add_git_branch_to_prompt)\$ "
 
 
 ################################################################################
